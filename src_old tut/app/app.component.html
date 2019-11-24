@@ -1,0 +1,44 @@
+module.exports = "
+<!DOCTYPE html>
+<html lang=\ "en\">
+
+<head>
+    <title>Tutorial App</title></head>
+
+<body>
+    <!-- <app-header></app-header> -->
+    <nav id=\ "header\" class=\ "navbar navbar-inverse\">
+        <div class=\ "shakeit\">
+            <div class=\ "navbar-brand navbar-logo\"><a class=\ "btn btn-success\" routerLink=\ "/home\" (click)=\ "HomeMenu()\">Java and AWS Tutorsils </a><br></div></div>
+        <!-- <div class=\"navbar-brand navbar-logo\"><a class=\"btn btn-success\" href=\"#\">Java and AWS Tutorsils </a><br></div> -->
+        <div class=\ "shakeit\">
+            <div class=\ "container-fluid\">
+                <!-- <div class=\"navbar-header\"><a class=\"btn btn\"  routerLink=\"/home\">Home</a> <a class=\"btn btn-primary\" routerLink=\"/java\" (click)=\"javaHeaderMenu()\" > Java</a>  <a (click)=\"awsHeaderMenu()\" class=\"btn btn-info\" routerLink=\"/aws\" > AWS</a> <a class=\"btn btn-warning\" routerLink=\"/javawithaws\" (click)=\"javawithawsHeaderMenu()\"> Java With AWS</a> <a class=\"btn btn-danger\" routerLink=\"/devops\" (click)=\"devopsHeaderMenu()\"> DevOps</a> <a class=\"btn btn-primary\" routerLink=\"/awsdevops\" (click)=\"awsdevopsHeaderMenu()\"> Devops in AWS</a> <a class=\"btn btn-link\" routerLink=\"/usefullinks\" (click)=\"usefullinksHeaderMenu()\"> Useful Links</a></div> -->
+                <div class=\ "navbar-header\"><a class=\ "btn btn\" routerLink=\ "/home\" (click)=\ "HomeMenu()\">Home</a><a class=\ "btn btn-primary\" routerLink=\ "/java\" (click)=\ "javaMenu()\"> Java</a><a class=\ "btn btn-info\" routerLink=\
+                        "/aws\"(click)=\ "awsMenu()\"> AWS</a><a class=\ "btn btn-warning\" routerLink=\ "/javawithaws\"(click)=\ "javawithawsMenu()\"> Java With AWS</a><a class=\ "btn btn-danger\" routerLink=\ "/devops\"(click)=\
+                        "devopsMenu()\"> DevOps</a><a class=\ "btn btn-primary\" routerLink=\ "/awsdevops\"(click)=\ "devopsinawsMenu()\"> Devops in AWS</a><a class=\ "btn btn-warning\" routerLink=\ "/usefullinks\" (click)=\ "usefullinksMenu()\"> Useful Links</a>
+                    <a
+                        class=\ "btn btn-info\" routerLink=\ "/angintqust\"> angular interview questions</a></div></div></div></nav>
+    <div>
+        <table>
+            <tr>
+                <td>
+                    <div *ngIf=\ "Java\">
+                        <app-javamenu></app-javamenu></div>
+                    <div *ngIf=\ "aws\">
+                        <app-awsmenu></app-awsmenu></div>
+                    <div *ngIf=\ "javawithaws\">
+                        <app-javawithawsmenu></app-javawithawsmenu></div>
+                    <div *ngIf=\ "devops\">
+                        <app-devopsmenu></app-devopsmenu></div>
+                    <div *ngIf=\ "devopsinaws\">
+                        <app-awsdevopsmenu></app-awsdevopsmenu></div>
+                    <div *ngIf=\ "usefullinks\"></div></td>
+                <td>
+                    <div id=\ "content-right\">
+                        <div class=\ "container-fluid\">
+                            <router-outlet></router-outlet></div></div>
+                    <div>
+                        <app-footer></app-footer></div></td></tr></table></div></body>
+
+</html>"

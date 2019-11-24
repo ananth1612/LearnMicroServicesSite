@@ -1,0 +1,186 @@
+module.exports = "
+<div class=\ "parsys col1\"> \n
+    <div class=\ "title-wrapper section\"> \n
+        <div class=\ "row title offset-small\"> \n
+            <div class=\ "twelve columns\"> \n
+                <h1 id=\ "How_do_I_quickly_and_easily_deploy_a_Java_web_application?\"> <a name=\ "How_do_I_quickly_and_easily_deploy_a_Java_web_application?\"> How do I quickly and easily deploy a Java web application?</a> </h1> \n </div> \n </div> \n </div> \n
+    <div class=\ "lead-copy section\"> \n
+        <div class=\ "lead   offset-nopad  \"> \n
+            <p> Amazon Web Services (AWS) is a great platform for running Java workloads, and offers several options for deploying and managing both off-the-shelf and custom applications. When planning to deploy a Java web application to AWS for the first
+                time, new customers are sometimes unclear as to which method will allow them to quickly get their application up and running. This document provides guidance for deploying Java web applications quickly and easily using either AWS-provided
+                or self-managed IIS web servers.</p> \n
+            <p> The following sections assume basic knowledge of Amazon Elastic Compute Cloud (Amazon EC2), Java application development, load balancing, and MySQL databases.</p> \n </div> \n </div> \n </div>\n\t\t
+<div style=\
+    "background-color: #ffffff; padding-top: 10px; padding-bottom: 10px;\" class=\ "topLeft midPad \"> \n
+    <div class=\ "row wrapper\"> \n
+        <div class=\ "twelve columns\"> \n
+            <div class=\ "parsys col1\"> \n
+                <div class=\ "title-wrapper section\"> \n
+                    <div class=\ "row title offset-nopad\"> \n
+                        <div class=\ "twelve columns\"> \n
+                            <h2 id=\ "General_Best_Practices\"> <a name=\ "General_Best_Practices\"> General Best Practices</a> </h2> \n </div> \n </div> \n </div> \n
+                <div class=\ "aws-text-box section\"> \n
+                    <div class=\ "  offset-nopad  \"> \n
+                        <p> The size and installation complexity of web applications can vary greatly, therefore there is rarely a one-size-fits-all solution for deploying and hosting Java applications. However, there are some universal best practices to
+                            consider when deploying any web application:</p> \n
+                        <ul> \n
+                            <li> Understand the deployment, installation, and configuration characteristics of the application.</li> \n
+                            <li> Understand application expectations from initial deployment to future scalability, availability, and backup and recovery requirements.</li> \n
+                            <li> Use automation whenever possible for deployment and other tasks where consistency is important.</li> \n
+                            <li> Leverage source code or application repositories to protect your application.</li> \n </ul> \n </div> \n </div> \n </div> \n </div> \n </div> \n </div>\n\t
+<div class=\ "row-builder section\"> \n
+    <div style=\ "background-color: #ffffff; padding-top: 10px; padding-bottom: 10px;\" class=\ "topLeft midPad \"> \n
+        <div class=\ "row wrapper\"> \n
+            <div class=\ "twelve columns\"> \n
+                <div class=\ "parsys col1\"> \n
+                    <div class=\ "title-wrapper section\"> \n
+                        <div class=\ "row title offset-nopad\"> \n
+                            <div class=\ "twelve columns\"> \n
+                                <h2 id=\ "Application_on_AWS\"> <a name=\ "Application_on_AWS\"> Application on AWS</a> </h2> \n </div> \n </div> \n </div> \n
+                    <div class=\ "aws-text-box section\"> \n
+                        <div class=\ "  offset-nopad  \"> \n
+                            <p> AWS offers several tools and services to enable both AWS-managed and customer-managed Java application deployment. The table below is a high-level reference to help identify the most appropriate option for a specific scenario.
+                                The following sections describe these different approaches and their applicable use cases in more detail.</p> \n </div> \n </div> \n
+                    <div class=\ "table-wrapper section\"> \n
+                        <div id=\ "element-fa253058-9e04-448b-a66c-5dd5f38e7bee\" class=\ "aws-table offset-nopad\" data-is-sticky-header=\ "false\"> \n
+                            <table width=\ "747\" cellspacing=\ "0\" cellpadding=\ "1\" border=\ "0\" height=\ "194\"> \n
+                                <tbody> \n
+                                    <tr> \n
+                                        <td width=\ "270\" style=\ "text-align: center;\">
+                                            <p><u><b>Application Characteristics</b></u></p>
+                                        </td> \n
+                                        <td width=\ "240\" style=\ "text-align: center;\">
+                                            <p><u><b>Packaging Tools</b></u></p>
+                                        </td> \n
+                                        <td width=\ "288\" style=\ "text-align: center;\">
+                                            <p><u><b>Deployment Mechanism</b></u></p>
+                                        </td> \n
+                                        <td width=\ "174\" style=\ "text-align: center;\"><b>Deployment <u>Method/Environment</u></b></td> \n </tr> \n
+                                    <tr> \n
+                                        <td width=\ "270\">
+                                            <p>Custom Java applications developed in Eclipse</p>
+                                        </td> \n
+                                        <td width=\ "240\" style=\ "text-align: center;\">
+                                            <p style=\ "text-align: left;\">Eclipse</p>
+                                        </td> \n
+                                        <td width=\ "288\" style=\ "text-align: center;\">
+                                            <p style=\ "text-align: left;\">Single-click deployment from within Eclipse</p>
+                                        </td> \n
+                                        <td width=\ "174\" style=\ "text-align: center;\">
+                                            <p><b>AWS Toolkit for Eclipse</b></p>
+                                        </td> \n </tr> \n
+                                    <tr> \n
+                                        <td width=\ "270\">
+                                            <p>Java web applications deployed as a JAR, WAR, or ZIP file, and requiring minimal OS changes</p>
+                                        </td> \n
+                                        <td width=\ "240\" style=\ "text-align: center;\">
+                                            <p style=\ "text-align: left;\">JAR, WAR, or ZIP</p>
+                                        </td> \n
+                                        <td width=\ "288\" style=\ "text-align: center;\">
+                                            <p style=\ "text-align: left;\">Automated deployment of packaged application using AWS Elastic Beanstalk</p>
+                                        </td> \n
+                                        <td width=\ "174\" style=\ "text-align: center;\">
+                                            <p><b>AWS Elastic Beanstalk</b></p>
+                                        </td> \n </tr> \n
+                                    <tr> \n
+                                        <td width=\ "270\">
+                                            <p>Any Java application or server configuration, especially those needing customized OS or third-party installers</p>
+                                        </td> \n
+                                        <td width=\ "240\" style=\ "text-align: center;\">
+                                            <p style=\ "text-align: left;\">Existing custom installers, application archive (JAR, WAR, ZIP), manual file copy, etc.</p>
+                                        </td> \n
+                                        <td width=\ "288\" style=\ "text-align: center;\">
+                                            <p style=\ "text-align: left;\">Existing software deployment tools and processes or automated deployment services, such as AWS CodeDeploy or AWS OpsWorks.</p>
+                                        </td> \n
+                                        <td width=\ "174\" style=\ "text-align: center;\">
+                                            <p><b>EC2 Instances </b></p>
+                                        </td> \n </tr> \n </tbody> \n </table> \n </div> \n
+                        <script>
+                            \
+                            n require([\n 'jquery', \n 'plugins/aws-table', \n 'scripts'\
+                                n
+                            ], function($, AWSTable) {\
+                                n new AWSTable($('#element-fa253058-9e04-448b-a66c-5dd5f38e7bee'));\
+                                n
+                            });\
+                            n
+                        </script> \n </div> \n </div> \n </div> \n </div> \n </div> \n </div>\n\t
+<div style=\ "background-color: #ffffff; padding-top: 10px; padding-bottom: 10px;\" class=\ "topLeft midPad \"> \n
+    <div class=\ "row wrapper\"> \n
+        <div class=\ "twelve columns\"> \n
+            <div class=\ "parsys col1\"> \n
+                <div class=\ "title-wrapper section\"> \n
+                    <div class=\ "row title offset-nopad\"> \n
+                        <div class=\ "twelve columns\"> \n
+                            <h3 id=\ "AWS_Toolkit_for_Eclipse\"> <a name=\ "AWS_Toolkit_for_Eclipse\"> AWS Toolkit for Eclipse</a> </h3> \n </div> \n </div> \n </div> \n
+                <div class=\ "aws-text-box section\"> \n
+                    <div class=\ "  offset-nopad  \"> \n
+                        <p>The AWS Toolkit for Eclipse provides the easiest and most straightforward way to deploy custom Java applications to AWS. This approach allows developers to deploy Java code directly to AWS, and to create supporting resources, such
+                            as AWS-managed RDS databases, directly from within Eclipse. For production deployments, customers can use Eclipse to create Java Archive (JAR) or Web application ARchive (WAR) files that are then versioned and deployed through
+                            more controlled change management processes using the AWS Elastic Beanstalk (Elastic Beanstalk) console, Elastic Beanstalk Command Line Interface (EB CLI), or Elastic Beanstalk API calls.</p> \n </div> \n </div> \n </div> \n
+            </div> \n </div> \n </div>\n\t
+<div style=\ "background-color: #ffffff; padding-top: 10px; padding-bottom: 10px;\" class=\ "topLeft midPad \"> \n
+    <div class=\ "row wrapper\"> \n
+        <div class=\ "twelve columns\"> \n
+            <div class=\ "parsys col1\"> \n
+                <div class=\ "title-wrapper section\"> \n
+                    <div class=\ "row title offset-nopad\"> \n
+                        <div class=\ "twelve columns\"> \n
+                            <h3 id=\ "AWS_Elastic_Beanstalk\"> <a name=\ "AWS_Elastic_Beanstalk\"> AWS Elastic Beanstalk</a> </h3> \n </div> \n </div> \n </div> \n
+                <div class=\ "columnbuilder parbase section\"> \n
+                    <div class=\ "row column-builder offset-nopad\"> \n
+                        <div class=\ "eight columns \"> \n
+                            <div class=\ "parsys col1\"> \n
+                                <div class=\ "aws-text-box section\"> \n
+                                    <div class=\ "  offset-nopad  \"> \n
+                                        <p>Elastic Beanstalk is an easy-to-use service for deploying and scaling Java web applications. Elastic Beanstalk supports several <a href=\
+                                                "http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts.platforms.html#concepts.platforms.java\">platform configurations</a> for Java applications, including multiple versions of Java with the Apache Tomcat application server and Java-only configurations for applications that do not use Tomcat. The Java-only
+                                            option allows customers to include any required library JAR files in the source bundle for Java web applications that don�t use a web container or use a different one, such as Jetty or GlassFish. Once deployed,
+                                            Elastic Beanstalk automatically manages capacity provisioning, load balancing, and Auto Scaling. This approach is appropriate for companies deploying Java applications that include the following criteria:</p>
+                                        \n
+                                        <ul> \n
+                                            <li>Require minimal OS changes. (Note that Elastic Beanstalk configuration files support advanced platform and OS configuration options. However this requires additional Elastic Beanstalk packaging effort and expertise.)<br>                                                </li> \n
+                                            <li>Either run in Apache Tomcat 7 or 8, or are packaged with their own web container</li> \n </ul> \n
+                                        <p>Elastic Beanstalk supports the following packaging and deployment mechanisms:</p> \n
+                                        <ul> \n
+                                            <li>Custom applications developed and deployed directly to Elastic Beanstalk using Eclipse and the <a href=\ "/eclipse/\">AWS Toolkit for Eclipse</a></li> \n
+                                            <li>Applications packaged into a JAR, WAR, or ZIP file, then deployed with the Elastic Beanstalk console, EB CLI, or Elastic Beanstalk API calls. To deploy multiple applications to one Elastic Beanstalk environment,
+                                                customers can bundle multiple WAR files into a single ZIP file.</li> \n </ul> \n </div> \n </div> \n </div> \n </div> \n
+                        <div class=\ "four columns \"> \n
+                            <div class=\ "parsys col2\"> \n
+                                <div class=\ "aws-comp section\"> \n
+                                    <figure class=\ "image-box offset-nopad \"> \n
+                                        <div class=\ "image parbase\"> \n <a href=\ "//d1.awsstatic.com/aws-answers/answers-images/eb-deployment-java.09d8a7e904a75425f8340bc967f10ab3fffcc19e.png\"><img alt=\"eb-deployment-java\" title=\"eb-deployment-java\" src=\"//d1.awsstatic.com/aws-answers/answers-images/eb-deployment-java.09d8a7e904a75425f8340bc967f10ab3fffcc19e.png\"></a>                                            \n </div> \n </figure> \n </div> \n </div> \n </div> \n </div> \n </div> \n </div> \n </div> \n </div> \n </div>\n\t
+<div class=\ "row-builder section\"> \n
+    <div style=\ "background-color: #ffffff; padding-top: 10px; padding-bottom: 10px;\" class=\ "topLeft midPad \"> \n
+        <div class=\ "row wrapper\"> \n
+            <div class=\ "twelve columns\"> \n
+                <div class=\ "parsys col1\"> \n
+                    <div class=\ "title-wrapper section\"> \n
+                        <div class=\ "row title offset-nopad\"> \n
+                            <div class=\ "twelve columns\"> \n
+                                <h3 id=\ "EC2_Instances\"> <a name=\ "EC2_Instances\"> EC2 Instances</a> </h3> \n </div> \n </div> \n </div> \n
+                    <div class=\ "columnbuilder parbase section\"> \n
+                        <div class=\ "row column-builder\"> \n
+                            <div class=\ "eight columns \"> \n
+                                <div class=\ "parsys col1\"> \n
+                                    <div class=\ "aws-text-box section\"> \n
+                                        <div class=\ "  offset-nopad  \"> \n
+                                            <p>Amazon EC2 Windows instances allow customers to deploy Java applications to AWS using their existing application deployment tools and processes, or to integrate Java application deployment with automated deployment
+                                                tools and services such as AWS CodeDeploy or AWS OpsWorks. AWS CodeDeploy and AWS OpsWorks make it easier to rapidly release new features, and automate the configuration, deployment, management and updates
+                                                of your services and applications on both EC2 instances and on-premises servers.<br> </p> \n
+                                            <p>Self-managed Amazon EC2 instances offer the flexibility to choose specific operating system, Java, and Java web container versions that an application or a company's IT standards require. Administrator or root
+                                                access to EC2 virtual machines allows customers to install and use existing infrastructure software, Java platform, and deployment tools to support their Java web applications. This option is best suited
+                                                for companies with the following requirements:</p> \n
+                                            <ul> \n
+                                                <li>Want to leverage their existing Java platform expertise and standards</li> \n
+                                                <li>Need to integrate their AWS environment into existing on-premises development and deployment processes</li> \n
+                                                <li>Require the most flexibility in OS and Java platform selection, version, and configuration</li> \n
+                                                <li>Plan to deploy third-party Java applications with sophisticated installers, manual license configuration, or extensive external dependencies</li> \n </ul> \n
+                                            <p>This approach offers tremendous flexibility, but also requires advanced AWS knowledge and service configuration, such as creating and configuring Elastic Load Balancing load balancers, Auto Scaling groups, and
+                                                self-managing the Java platform and underlying OS as well as implementing custom application-deployment processes.</p> \n </div> \n </div> \n </div> \n </div> \n
+                            <div class=\ "four columns \"> \n
+                                <div class=\ "parsys col2\"> \n
+                                    <div class=\ "aws-comp section\"> \n
+                                        <figure class=\ "image-box offset-nopad \"> \n
+                                            <div class=\ "image parbase\"> \n <a href=\ "//d1.awsstatic.com/aws-answers/answers-images/ec2-deployment-java.880989f287c8145dbd24eaa1a0aef04be62af8bd.png\"><img alt=\"ec2-deployment-java\" title=\"ec2-deployment-java\" src=\"//d1.awsstatic.com/aws-answers/answers-images/ec2-deployment-java.880989f287c8145dbd24eaa1a0aef04be62af8bd.png\"></a>                                                \n </div> \n </figure> \n </div> \n </div> \n </div> \n </div> \n </div> \n </div> \n </div> \n </div> \n </div> \n </div>"

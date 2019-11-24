@@ -1,0 +1,330 @@
+<div class="row">
+    <div class="col-md-9 col-md-offset-3">
+        
+         <h3 class="f-s-30 title">AWS SysOps Course Curriculum  </h3>                          <div class="clearfix"></div>
+        <div class="panel-group accordion" id="accordion" role="tablist" aria-multiselectable="true">
+            <!-- <h4 class="lessons">Unit 1:</h4> -->
+            
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="lesson4642">
+                    <h4 class="panel-title">
+                        <a role="button" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#l4642" aria-expanded="false" aria-controls="collapsel4642">
+                            Basics of Amazon Web Service SysOps are introduced 
+                        </a>                                        
+                    </h4>
+                </div>
+                <div id="l4642" class="panel-collapse collapse" role="tabpanel" aria-labelledby="lesson4642" aria-expanded="false" style="height: 0px;">
+                    <div class="panel-body">
+                        <p style="text-align:justify">System Operations on AWS is designed to teach those in a Systems Administrator or Developer Operations (DevOps) role how to create automatable and repeatable deployments of networks and systems on the AWS platform. The course covers the specific AWS features and tools related to configuration and deployment, as well as common techniques used throughout the industry for configuring and deploying systems.</p>
+                    </div>
+                </div>
+                
+            </div>
+
+            
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="lesson4643">
+                    <h4 class="panel-title">
+                        <a role="button" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#l4643" aria-expanded="false" aria-controls="collapsel4643">
+                            A Grip on 7 AWS Tenets 
+                        </a>                                        
+                    </h4>
+                </div>
+                <div id="l4643" class="panel-collapse collapse " role="tabpanel" aria-labelledby="lesson4643" aria-expanded="false">
+                    <div class="panel-body">
+                        <p><span style="color:rgb(102, 102, 102); font-family:lato,helvetica,arial,lucida,sans-serif; font-size:16px">Seven best practises for building systems with AWS:</span></p>
+
+<p><strong>Design for failure and nothing fails</strong></p>
+
+<ul class="list">
+<li>Avoid single points of failure</li>
+<li>Assume everything fails and design backwards</li>
+</ul>
+
+<p><strong>Loose coupling sets you free</strong></p>
+
+<ul class="list">
+<li>Design architectures with independent components
+<ul class="list">
+<li>The more loosely they’re coupled, the bigger they scale</li>
+<li>Design every component as a black box</li>
+<li>Load balance clusters</li>
+<li>Use a queue to pass messages between components</li>
+</ul>
+</li>
+</ul>
+
+<p><strong>Implement elasticity</strong></p>
+
+<ul class="list">
+<li>Elasticity is a fundamental property of the cloud</li>
+<li>Don’t assume the health, availability, or fixed location of components</li>
+<li>Use design that are resilient to reboot and re-launch</li>
+<li>Bootstrap your instances
+<ul class="list">
+<li>When an instance launches, it should ask “Who am I and what is my role?”</li>
+<li>Favour dynamic configuration</li>
+</ul>
+</li>
+</ul>
+
+<p><strong>Build security in every layer</strong></p>
+
+<ul class="list">
+<li>Security is a shared responsibility. You decide how to:
+<ul class="list">
+<li>Encrypt data in transit and at rest</li>
+<li>Enforce principle of least privilege</li>
+<li>Create distinct, restricted Security Groups for each application role
+<ul class="list">
+<li>Restrict external access via these security groups</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Use multi-factor authentication</li>
+</ul>
+
+<p><strong>Don’t fear constraints</strong></p>
+
+<ul class="list">
+<li>Need more RAM
+<ul class="list">
+<li>Consider distributing load across machines or a shared cache</li>
+<li>Better IOPS for databases?
+<ul class="list">
+<li>Instead, consider multiple read replicas, sharing, or DB clustering</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Hardware failed or config got corrupted
+<ul class="list">
+<li>“Rip and Replace” – Simply toss bad instances and instantiate replacement</li>
+</ul>
+</li>
+</ul>
+
+<p><strong>Think parallel</strong></p>
+
+<ul class="list">
+<li>Experiment with parallel architectures</li>
+</ul>
+
+<p><strong>Leverage different storage options</strong></p>
+
+<ul class="list">
+<li>One size does not fit all
+<ul class="list">
+<li>Object storage</li>
+<li>Content delivery network/edge caching</li>
+<li>Block storage</li>
+<li>Relational database</li>
+<li>NoSQL</li>
+</ul>
+</li>
+</ul>
+                    </div>
+                </div>
+                
+            </div>
+
+            
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="lesson4644">
+                    <h4 class="panel-title">
+                        <a role="button" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#l4644" aria-expanded="false" aria-controls="collapsel4644">
+                            Hands-on sessions with SDKs or API tools and AWS LI 
+                        </a>                                        
+                    </h4>
+                </div>
+                <div id="l4644" class="panel-collapse collapse" role="tabpanel" aria-labelledby="lesson4644" aria-expanded="false" style="height: 0px;">
+                    <div class="panel-body">
+                        <p style="text-align: justify;">Simplify using AWS services in your applications with an API tailored to your programming language or platform such as Browser, iOS, Android, Java, .Net, Node.js, PHP, Python, Ruby, Go, C++, AWS Mobile SDK, AWS IoT Device SDK etc.</p>
+
+<p style="text-align: justify;">Controlling of AWS services from the command line and automate service management with scripts by AWS Command Line Interface(CLI), AWS Tools for PowerShell, AWS SAM Local, Amazon BenStalk, Amazon EC2, and Amazon EC2 Container Service.</p>
+                    </div>
+                </div>
+                
+            </div>
+
+            
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="lesson4646">
+                    <h4 class="panel-title">
+                        <a role="button" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#l4646" aria-expanded="false" aria-controls="collapsel4646">
+                            Fundamental security and privacy concepts 
+                        </a>                                        
+                    </h4>
+                </div>
+                <div id="l4646" class="panel-collapse collapse " role="tabpanel" aria-labelledby="lesson4646" aria-expanded="false">
+                    <div class="panel-body">
+                        <p>IAM Overview<br>
+IAM User Administration&nbsp;&nbsp;<br>
+IAM Groups&nbsp;&nbsp;<br>
+IAM User Permissions&nbsp;&nbsp;<br>
+MFA&nbsp; Securing<br>
+AWS Master Account</p>
+                    </div>
+                </div>
+                
+            </div>
+
+            
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="lesson4647">
+                    <h4 class="panel-title">
+                        <a role="button" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#l4647" aria-expanded="false" aria-controls="collapsel4647">
+                            Deployment and Provisioning 
+                        </a>                                        
+                    </h4>
+                </div>
+                <div id="l4647" class="panel-collapse collapse " role="tabpanel" aria-labelledby="lesson4647" aria-expanded="false">
+                    <div class="panel-body">
+                        <p style="text-align:justify">Cloud Deployments Overview&nbsp;&nbsp;<br>
+Deployment with Auto Scaling&nbsp;&nbsp;<br>
+Blue / Green Deployment&nbsp;&nbsp;<br>
+Version Updates with Auto Scaling&nbsp;&nbsp;<br>
+Overview of the technologies for automated deployment CloudFormation: Terminology&nbsp;&nbsp;<br>
+CloudFormation: Structure of the template&nbsp;&nbsp;<br>
+CloudFormation: Maintaining Templates&nbsp;&nbsp;<br>
+CloudFormation: Working with Stacks&nbsp;&nbsp;<br>
+CloudFormation: Ref functions&nbsp;&nbsp;<br>
+CloudFormation: Parameters&nbsp;&nbsp;<br>
+CloudFormation: Mappings&nbsp;&nbsp;<br>
+CloudFormation: Resources&nbsp;&nbsp;<br>
+CloudFormation: Init&nbsp;&nbsp;<br>
+CloudFormation:Init and User Data&nbsp;&nbsp;<br>
+CloudFormation: WaitCondition&nbsp;&nbsp;<br>
+CloudFormation: Outputs&nbsp;&nbsp;<br>
+CloudFormation: Errors&nbsp;&nbsp;<br>
+CloudFormation: Demo&nbsp;&nbsp;<br>
+CloudFormation: Creating Base templates<br>
+CloudFormation: Troubleshooting templates Lab</p>
+                    </div>
+                </div>
+                
+            </div>
+
+            
+            <div style="" id="lessons_more">
+                                                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="lesson4648">
+                        <h4 class="panel-title">
+                            <a role="button" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#l4648" aria-expanded="false" aria-controls="collapsel4648">
+                                Data Management 
+                            </a>                                        
+                        </h4>
+                    </div>
+                    <div id="l4648" class="panel-collapse collapse" role="tabpanel" aria-labelledby="lesson4648" aria-expanded="false">
+                        <div class="panel-body">
+                            <p>Introduction to the section&nbsp; EC2 volume/storage types<br>
+EC2 EBS snapshots overview&nbsp;&nbsp;<br>
+S3 overview&nbsp;&nbsp;<br>
+Glacier overview&nbsp;&nbsp;<br>
+Concepts of Data lifecycle on AWS&nbsp;&nbsp;<br>
+Some storage limits important to know&nbsp;&nbsp;<br>
+How to work with EBS volumes&nbsp;&nbsp;<br>
+EBS RAID&nbsp;&nbsp;<br>
+EBS Snapshots in details&nbsp;&nbsp;<br>
+Using Amazon S3 in details&nbsp;&nbsp;<br>
+S3 access (with console demo)&nbsp;&nbsp;<br>
+Create IAM group policy with Policy Generator&nbsp;&nbsp;<br>
+S3 versioning&nbsp;&nbsp;<br>
+S3 CORS&nbsp;&nbsp;<br>
+S3 Reduced Redundancy storage&nbsp; Using Amazon Glacier Storage Security<br>
+EBS and encryption&nbsp;&nbsp;<br>
+S3 and encryption&nbsp;&nbsp;<br>
+Storage troubleshooting&nbsp;&nbsp;<br>
+Storage Pricing</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                                                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="lesson4649">
+                        <h4 class="panel-title">
+                            <a role="button" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#l4649" aria-expanded="false" aria-controls="collapsel4649">
+                                Monitor and Metrics 
+                            </a>                                        
+                        </h4>
+                    </div>
+                    <div id="l4649" class="panel-collapse collapse" role="tabpanel" aria-labelledby="lesson4649" aria-expanded="false">
+                        <div class="panel-body">
+                            <p>Overview of Cloud Monitoring&nbsp;&nbsp;<br>
+CloudWatch: key concepts<br>
+CloudWatch: Logs&nbsp; AWS CloudTrail overview&nbsp;&nbsp;<br>
+Third-party Monitoring apps&nbsp;&nbsp;<br>
+Cloudwatch metrics&nbsp;&nbsp;<br>
+CloudWatch<br>
+Log analysis<br>
+Cloudtrail logs<br>
+Monitoring and Security&nbsp;&nbsp;<br>
+Troubleshooting<br>
+Quick quiz&nbsp; Lab</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                                                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="lesson4650">
+                        <h4 class="panel-title">
+                            <a role="button" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#l4650" aria-expanded="false" aria-controls="collapsel4650">
+                                Metrics 
+                            </a>                                        
+                        </h4>
+                    </div>
+                    <div id="l4650" class="panel-collapse collapse" role="tabpanel" aria-labelledby="lesson4650" aria-expanded="false">
+                        <div class="panel-body">
+                                                                    </div>
+                    </div>
+                    
+                </div>
+                                                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="lesson4651">
+                        <h4 class="panel-title">
+                            <a role="button" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#l4651" aria-expanded="false" aria-controls="collapsel4651">
+                                Provisioning and deployment and management of data and high availability 
+                            </a>                                        
+                        </h4>
+                    </div>
+                    <div id="l4651" class="panel-collapse collapse" role="tabpanel" aria-labelledby="lesson4651" aria-expanded="false">
+                        <div class="panel-body">
+                                                                    </div>
+                    </div>
+                    
+                </div>
+                                                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="lesson6934">
+                        <h4 class="panel-title">
+                            <a role="button" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#l6934" aria-expanded="false" aria-controls="collapsel6934">
+                                Practice Test &amp; Interview Questions 
+                            </a>                                        
+                        </h4>
+                    </div>
+                    <div id="l6934" class="panel-collapse collapse" role="tabpanel" aria-labelledby="lesson6934" aria-expanded="false">
+                        <div class="panel-body">
+                            <p>Mindmajix offers advanced <a href="https://mindmajix.com/aws-sysops-interview-questions" target="_blank">AWS SysOps&nbsp;interview questions and answers </a>along with AWS SysOps resume samples. Take a free sample practice test before appearing in the certification to improve your chances of scoring high.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                                            </div>
+                                        <div class="text-center f-w-600 f-s-18 p-t-10 p-b-10" id="more_lessons" style="background: rgb(246, 246, 246); display: none;"> + 5 more lessons </div>
+             
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="clearfix">
+
+
+
+             <button class="btn btn-red m-t-30 f-s-18 batch_enroll form_button" id="btn_advisor" data-toggle="modal" data-target="#schedules" data-text="Not sure about the training curriculum?" data-message="Tell us a bit about your requirement so that we can set up your FREE personalized demo." data-button="Contact us" data-subject="Connect With Advisor">Connect with Advisor
+
+
+        </button></div>
+
+
+    </div>
+</div>
