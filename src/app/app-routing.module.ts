@@ -11,6 +11,7 @@ import { ContactusComponent } from './contactus/contactus.component';
 import { AwssolarchComponent } from './awssolarch/awssolarch.component';
 import { AwssysopsComponent } from './awssysops/awssysops.component';
 import { AwscloudpractComponent } from './awscloudpract/awscloudpract.component';
+import {CoursescompComponent} from './courses/coursescomp/coursescomp.component'
 
 const routes: Routes = [
     // { path: '', redirectTo: 'customer', pathMatch: 'full' },
@@ -21,15 +22,15 @@ const routes: Routes = [
         path: 'home',
         component: HomeComponent
     },
-    { path: 'springbootintro', component: SpringbootintroComponent },
-    { path: 'microintro', component: MicroservicesintroComponent },
-    { path: 'awsdeveloper', component: AwsdeveloperComponent },
-    { path: 'contactus', component: ContactusComponent },
-    { path: 'awsarchitect', component: AwssolarchComponent },
-    { path: 'awssysops', component: AwssysopsComponent },
-    { path: 'awspract', component: AwscloudpractComponent },
+    // { path: 'springbootintro', component: SpringbootintroComponent },
+    // { path: 'microintro', component: MicroservicesintroComponent },
+    // { path: 'awsdeveloper', component: AwsdeveloperComponent },
+    // { path: 'contactus', component: ContactusComponent },
+    // { path: 'awsarchitect', component: AwssolarchComponent },
+    // { path: 'awssysops', component: AwssysopsComponent },
+    // { path: 'awspract', component: AwscloudpractComponent },
     
-
+    { path: 'courses', component: CoursescompComponent },
     
     
      {path: '',redirectTo: '/home',pathMatch: 'full'},
