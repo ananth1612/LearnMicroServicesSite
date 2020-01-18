@@ -1,12 +1,100 @@
 /* You can add global styles to this file, and also import other style files */
-
 body {
-    margin: 0;
-    height: 100vh;
-    font-family: Roboto, Arial, Helvetica, sans-serif, sans-serif;
-    font-size: 16px;
-    color: #292a1d;
+    font: 400 15px Lato, ;
+    line-height: 1.8;
+    background-color: transparent;
+   
   }
-h3{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
+  .container-fluid {
+    padding: 60px 50px;
+  }
+
+  .navbar {
+    margin-bottom: 0;
+    background-color: rgba(174, 241, 66, 0.87);
+    z-index: 9999;
+    border: 0;
+    font-size: 16px !important;
+    line-height: 1.42857143 !important;
+    
+    border-radius: 0;
+    font-family: Arial, Helvetica, sans-serif, Geneva, Tahoma, sans-serif;
+  }
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    /* width: px; */
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+  /* .fa:hover {
+      opacity: 0.7;
+  } */
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  /* .navbar:hover {
+    font-display: ;
+ 
+  } */
+  /* .navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+  } */
+  /* .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #f4511e !important;
+    background-color: #fff !important;
+  }  */
+  
+
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    /* .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    } */
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    /* .row.content {height: 450px} */
+    
+    /* Set gray background color and 100% height */
+    /* .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+     */
+    /* Set black background color, white text and some padding */
+    /* footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    } */
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    /* @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    } */

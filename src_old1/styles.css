@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: Roboto, Arial, Helvetica, sans-serif, sans-serif;
+    font-size: 16px;
+    color: #292a1d;
+  }
+h3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

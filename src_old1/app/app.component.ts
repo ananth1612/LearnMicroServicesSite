@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'MicroServices';
-  description = 'Learn Micro Services';
+  title = 'Customers Database Application';
+  description = 'Angular-SpringBoot FullStack application';
 }

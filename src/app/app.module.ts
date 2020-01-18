@@ -9,6 +9,17 @@ import { CustomersListComponent } from './customers-list/customers-list.componen
 import { SearchCustomersComponent } from './search-customers/search-customers.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+import { NameComponentComponent } from './name-component/name-component.component';
+import { SpringbootintroComponent } from './springboot/springbootintro/springbootintro.component';
+import { MicroservicesintroComponent } from './microservices/microservicesintro/microservicesintro.component';
+import { HomeComponent } from './home/home.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { AwsdeveloperComponent } from './awsdeveloper/awsdeveloper.component';
+import { ContactusComponent } from './contactus/contactus.component';
+import { AwssolarchComponent } from './awssolarch/awssolarch.component';
+import { AwscloudpractComponent } from './awscloudpract/awscloudpract.component';
+import { AwssysopsComponent } from './awssysops/awssysops.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +27,18 @@ import { HttpClientModule } from '@angular/common/http';
     CreateCustomerComponent,
     CustomerDetailsComponent,
     CustomersListComponent,
-    SearchCustomersComponent
+    SearchCustomersComponent,
+    NameComponentComponent,
+    SpringbootintroComponent,
+    MicroservicesintroComponent,
+    HomeComponent,
+    HeaderComponent,
+    FooterComponent,
+    AwsdeveloperComponent,
+    ContactusComponent,
+    AwssolarchComponent,
+    AwscloudpractComponent,
+    AwssysopsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,4 @@
-<div *ngIf="customer">  
+<div *ngIf="customer">
   <div>
     <label>Name: </label> {{customer.name}}
   </div>
@@ -14,20 +14,6 @@
   <span class="button is-small btn-primary" *ngIf='!customer.active' (click)='updateActive(true)'>Active</span>
 
   <span class="button is-small btn-danger" (click)='deleteCustomer()'>Delete</span>
-<table>
-<thead>
-  <td>Name</td>
-  <td>Age</td>
-  <td>Active</td>
-  </thead>
-  <tr>
-      <td>{{customer.name}}</td>
-      <td> {{customer.age}}</td>
-      <td>{{customer.active}}</td>
-
-  </tr>
-
-</table>
 
   <hr/>
 </div>
