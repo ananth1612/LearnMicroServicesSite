@@ -11,7 +11,7 @@ body {
 
   .navbar {
     margin-bottom: 0;
-    background-color: rgba(174, 241, 66, 0.87);
+    background-color: rgb(0, 176, 240);
     z-index: 9999;
     border: 0;
     font-size: 16px !important;
@@ -157,16 +157,31 @@ body {
       font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
   }
 
-.step-text a {
+.step-text {
       color: white;
 text-decoration: none;
   }
+  a {
+    color: white;
+text-decoration: none;
+}
 
+h1 {
+  color: rgb(0, 176, 240);
+text-decoration: none;
+}
+h2 {
+  color: rgb(0, 176, 240);
+text-decoration: none;
+}
 .step-text a:hover {
       color: white;
 text-decoration:underline;
   }
-
+  a:hover {
+    color: white;
+text-decoration:underline;
+}
   .content {
       box-sizing: border-box;
       min-width: 700px;
