@@ -27,5 +27,5 @@ artifacts:
     # - '**/*.js'
     # - '**/*.css'
     # - '**/*.ico'
-  discard-paths: yes
+  # discard-paths: yes
   base-directory: 'dist/Angular6SpringBoot'
