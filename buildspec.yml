@@ -22,9 +22,10 @@ phases:
 
 artifacts:
   files:
-    - '**/*.html'
-    - '**/*.js'
-    - '**/*.css'
-    - '**/*.ico'
+    - '**/*'
+    # - '**/*.html'
+    # - '**/*.js'
+    # - '**/*.css'
+    # - '**/*.ico'
   discard-paths: yes
   base-directory: 'dist/Angular6SpringBoot'
