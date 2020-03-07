@@ -20,7 +20,7 @@ import { ContactusComponent } from './contactus/contactus.component';
 import { AwssolarchComponent } from './awssolarch/awssolarch.component';
 import { AwscloudpractComponent } from './awscloudpract/awscloudpract.component';
 import { AwssysopsComponent } from './awssysops/awssysops.component';
-import { CoursesModule } from './courses/courses.module';
+import {CoursescompComponent} from './courses/coursescomp/coursescomp.component'
 
 @NgModule({
   declarations: [
@@ -40,14 +40,13 @@ import { CoursesModule } from './courses/courses.module';
     AwssolarchComponent,
     AwscloudpractComponent,
     AwssysopsComponent,
-    
+    CoursescompComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    HttpClientModule,
-    CoursesModule
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
