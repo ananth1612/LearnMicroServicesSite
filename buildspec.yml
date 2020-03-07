@@ -16,9 +16,9 @@ phases:
     commands:
       - npm run build
       # - npm run test
-  post_build:
-    commands:
-      - aws s3 sync ./dist/Angular6SpringBoot s3://devkloudops.com --acl 'public-read' --delete
+  # post_build:
+  #   commands:
+  #     - aws s3 sync ./dist/Angular6SpringBoot s3://devkloudops.com --acl 'public-read' --delete
 
 artifacts:
   files:
