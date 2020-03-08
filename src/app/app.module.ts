@@ -10,8 +10,6 @@ import { SearchCustomersComponent } from './search-customers/search-customers.co
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { NameComponentComponent } from './name-component/name-component.component';
-import { SpringbootintroComponent } from './springboot/springbootintro/springbootintro.component';
-import { MicroservicesintroComponent } from './microservices/microservicesintro/microservicesintro.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -20,7 +18,7 @@ import { ContactusComponent } from './contactus/contactus.component';
 import { AwssolarchComponent } from './awssolarch/awssolarch.component';
 import { AwscloudpractComponent } from './awscloudpract/awscloudpract.component';
 import { AwssysopsComponent } from './awssysops/awssysops.component';
-import {CoursescompComponent} from './courses/coursescomp/coursescomp.component'
+import { CoursesModule } from './courses/courses.module';
 
 @NgModule({
   declarations: [
@@ -29,9 +27,7 @@ import {CoursescompComponent} from './courses/coursescomp/coursescomp.component'
     CustomerDetailsComponent,
     CustomersListComponent,
     SearchCustomersComponent,
-    NameComponentComponent,
-    SpringbootintroComponent,
-    MicroservicesintroComponent,
+    NameComponentComponent,    
     HomeComponent,
     HeaderComponent,
     FooterComponent,
@@ -39,14 +35,15 @@ import {CoursescompComponent} from './courses/coursescomp/coursescomp.component'
     ContactusComponent,
     AwssolarchComponent,
     AwscloudpractComponent,
-    AwssysopsComponent,
-    CoursescompComponent
+    AwssysopsComponent
+    
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    CoursesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

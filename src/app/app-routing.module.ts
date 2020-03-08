@@ -3,8 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { CustomersListComponent } from './customers-list/customers-list.component';
 import { CreateCustomerComponent } from './create-customer/create-customer.component';
 import { SearchCustomersComponent } from './search-customers/search-customers.component';
-import { SpringbootintroComponent } from './springboot/springbootintro/springbootintro.component';
-import { MicroservicesintroComponent } from './microservices/microservicesintro/microservicesintro.component';
 import { HomeComponent } from './home/home.component';
 import { AwsdeveloperComponent } from './awsdeveloper/awsdeveloper.component';
 import { ContactusComponent } from './contactus/contactus.component';
